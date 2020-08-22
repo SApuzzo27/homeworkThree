@@ -39,23 +39,6 @@ function confirmCriteria() {
     }
 }
 
-
-
-//generate password 
-function generatePassword(){
-  confirmCriteria();
-  createFinalArray();
-  var password = "";
-for (var i = 0; i < characterCount; i++) {
-    var character = totalCharacters[Math.floor(Math.random() * totalCharacters.length)];
-    password +=character;
-  };
-totalCharacters = [];
-return password
-};
-
-
-
 //create final array for password variables
 function createFinalArray() {
   if (confirmUppercase) {
@@ -71,6 +54,21 @@ function createFinalArray() {
     Array.prototype.push.apply(totalCharacters, specialCharacters)
   };
 };
+
+
+//generate password 
+function generatePassword(){
+  confirmCriteria();
+  createFinalArray();
+  var password = "";
+for (var i = 0; i < characterCount; i++) {
+    var character = totalCharacters[Math.floor(Math.random() * totalCharacters.length)];
+    password +=character;
+  };
+totalCharacters = [];
+return password
+};
+
 
 //write password to the #password input
 function writePassword() {
