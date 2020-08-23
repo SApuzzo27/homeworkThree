@@ -31,7 +31,7 @@ function confirmCriteria() {
     if (confirmLowercase || confirmUppercase || confirmNumbers || confirmSpecialCharacters ) {
     }
     else  { 
-    alert("You must include ATLEAST one of the following lowercase, uppercase, number, or special charater.");
+    alert("You must include ATLEAST one of the following: lowercase, uppercase, number, or special charater.");
     confirmUppercase = confirm("Would you like to include UPPERCASE letters? Select OK if yes, CANCEL if no");
     confirmLowercase = confirm("Would you like to include lowercase letters? Select OK if yes, CANCEL if no");
     confirmNumbers = confirm("Would you like to include numbers? Select OK if yes, CANCEL if no");
